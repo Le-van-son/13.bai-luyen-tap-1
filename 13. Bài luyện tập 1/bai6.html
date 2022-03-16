@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 5</title>
+</head>
+<body>
+<script>
+    let v = parseInt(prompt("nhap v"))
+    let x = [5, 16, 21, -3.45, -7, 14, -19, 6, 0, -3]
+    count = 0
+    for (let i = 0; i <= x.length - 1; i++) {
+        if (v===x[i]){
+            document.write("" + v +" is in the array")
+            count++
+        }
+
+        }
+    if(count==0) {
+        document.write("" + v + " isn't in the array")
+    }
+
+
+</script>
+</body>
+</html>

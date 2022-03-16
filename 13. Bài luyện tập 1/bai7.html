@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 5</title>
+</head>
+<body>
+<script>
+    let v = parseInt(prompt("nhap v"))
+    let x = [5, 16, 21, -3.45, -7, 14, -19, 6, 0, -3]
+    count = 0
+    x[10]=0
+    for (let i = 0; i <= x.length - 1; i++) {
+        if (v===x[i]){
+            x[i]=x[10]
+            count++
+        }
+    }
+    document.write("" +x)
+
+/*while (first < last) {
+        let b = x[first];
+        x[first] = x[last];
+        x[last] = b;
+        first++
+        last--
+    }
+*/
+</script>
+</body>
+</html>

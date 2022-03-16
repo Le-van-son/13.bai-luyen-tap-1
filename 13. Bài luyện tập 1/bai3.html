@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai3</title>
+</head>
+<body>
+<script>
+    let x = [5, 16, 21, 3, 7, 14, 19, 6, 0, -3]
+    max = 5
+    total = 0
+    tb=0
+    for (let i = 0; i < x.length ;i++) {
+        total = total + x[i]
+        if (max < x[i]) {
+            max = x[i]
+        }
+    }
+    tb=total/(x.length)
+    document.write("gia tri max la " + max + "; tổng mảng = " + total +"; TB = " +tb)
+</script>
+</body>
+</html>
