@@ -6,17 +6,15 @@
 </head>
 <body>
 <script>
-    let v = parseInt(prompt("nhap v"))
-    let x = [5, 16, 21, -3.45, -7, 14, -19, 6, 0, -3]
+    let x = [5, 16, 21, -3., -7, 14, -19, 6, 4, -3]
     count = 0
-    x[10]=0
+    max=x[0]
     for (let i = 0; i <= x.length - 1; i++) {
-        if (v===x[i]){
-            x[i]=x[10]
-            count++
-        }
+        if (max <= x[i])
+        max = x[i];
+        x[i]=x[i+1]
     }
-    document.write("" +x)
+    document.write("" +max +",")
 
 /*while (first < last) {
         let b = x[first];
